@@ -140,7 +140,9 @@ As we see in the output below,the accuracy is increasing while the error decreas
              operators needed for algebraic matrix operations.  
 ```dataset```: A class definition and implementation that serves the functionality related to handling training and testing data.  
 ```modelclasses``` : A singleton class object for managing information about labels, which are the outputs of the implemented neural network.  
+  
              The rest of the code is organized into .cu c++ code files and their corresponding header files. In most cases, each file implements one component 
              of the newral network, keeping the code readable and easier to maintain.  
+               
              Finally, in the the main.cu, we define the neural network architecture, train the model,
              and show the results of the trained model by predicting the outputs according to the inputs from the test dataset.  
