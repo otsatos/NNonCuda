@@ -52,7 +52,7 @@ the training of a machine learning model for the Iris Data set.
 
 ![Original image](/docs/dnn.png "Neural Network Architecture")
 
-**Step 3.** We generate randomly the initial weights for our newral network and for that 2 matrices, with their dimensnions relying on the number of feautures in the hidden layer and the number labels of the output layer. 
+**Step 3.** We generate randomly the initial weights for our newral network and for that we use 2 matrices, with their dimensions relying on the number of feautures in the input layer, the number of neurons on the hidden layer and the number of labels of the output layer.
 
 > Initial Weights  
 > -----------------------------------------------------   
