@@ -1,5 +1,5 @@
 # Deep Neural Network with CUDA
-Creating DNN building blocks with **C++** code and **Cuda** libraries
+Creating DNN building blocks in **C++** using **Cuda** libraries
 
 ## Project Description
 Libraries and frameworks like Tensorflow, Pytorch, Deeplearning4j, Keras etc, have revolutionized the data science field with their ready-to-use machine learning tools.
@@ -114,7 +114,8 @@ As we see in the output below,the accuracy is increasing while the error decreas
 > 1.22277,-1.26229,-0.535522  
 
 
-**Step 5.**
+**Step 5.** We make use of the test dataset to make predictions by using the feedforward function with final weights.
+
 > Model Testing on Test Samples  
 > -----------------------------------------------------  
 > Input/Output  data where imported successfully...  
