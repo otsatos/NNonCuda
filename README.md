@@ -137,7 +137,7 @@ As we see in the output below,the accuracy is increasing while the error decreas
 ## Code structure 
 ```Matrix``` struct object : A data structure that contains information about matrix dimensions,   
              the dynamic memory that holds the vectorized data of the matrix, and all the functions and overloaded   
-             operators needed for algebraic matrix operations.
+             operators needed for algebraic matrix operations.  
 ```dataset```: A class definition and implementation that serves the functionality related to handling training and testing data.  
 ```modelclasses``` : A singleton class object for managing information about labels, which are the outputs of the implemented neural network.  
              The rest of the code is organized into .cu c++ code files and their corresponding header files. In most cases, each file implements one component 
