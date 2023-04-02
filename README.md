@@ -119,19 +119,19 @@ As we see in the output below,the accuracy is increasing while the error decreas
 > -----------------------------------------------------  
 > Input/Output  data where imported successfully...  
 
-> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Prediction Accuracy: 92.7785  
-> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Prediction Accuracy: 93.262  
-> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Prediction Accuracy: 90.1079  
-> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Prediction Accuracy: 91.3809  
-> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Prediction Accuracy: 92.2176  
+> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Accuracy: 92.7785  
+> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Accuracy: 93.262  
+> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Accuracy: 90.1079  
+> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Accuracy: 91.3809  
+> Actual Y value:Iris-setosa Predicted Y value:Iris-setosa Accuracy: 92.2176  
 > ...  
 > ...  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 90.7138  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 88.4969  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 89.5119  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 87.9169  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 88.9618  
-> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Prediction Accuracy: 87.9063  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 90.7138  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 88.4969  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 89.5119  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 87.9169  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 88.9618  
+> Actual Y value:Iris-virginica Predicted Y value:Iris-virginica Accuracy: 87.9063  
 
 
 ## Code structure 
