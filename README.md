@@ -8,16 +8,15 @@ Inspired by the NumPy numerical library in Python, I wanted to create a similar 
 and solving machine learning classification problems. There's nothing new here but a personal interest and intention to explore the data science techniques with Cuda libraries that give access to high-performance computing with little complexity and workarounds. 
 
 The purpose of this project is to provide a **C++** implementation of fundamental deep learning building blocks, 
-such as matrix data structure, hidden layers, activation function and loss function, 
+such as matrix data structure, hidden layers, activation and loss functions, 
 that can be used with the same convenience as Python libraries to perform feedforward and backpropagation techniques.
-The project aims to demonstrate the feasibility of developing high-performance deep learning libraries in C++ and CUDA,
-while also exploring the challenges and benefits of using these technologies. In this project we are dealing with a classification problem using the Iris Data set. 
+In this project we are dealing with a classification problem using the Iris Data set. 
 The **Iris Dataset** is a well-known dataset in machine learning that consists of 150 samples of iris flowers, each of which is described by four features: sepal length, sepal width, petal length, and petal width. 
 The goal of the problem is to classify each sample into one of three possible species: Iris-setosa, Iris-versicolor, or Iris-virginica.
 
 ## The solution
-We have developed a program in C++ that leverages the power of cuBLAS library and the Cuda runtime library to accelerate 
-the training of a machine learning model for the Iris Data set
+We have developed a program in C++ that leverages the power of cuBLAS and Cuda runtime libraries to accelerate 
+the training of a machine learning model for the Iris Data set.
 
 **Step1.** The program starts by reading first training dataset and creates structures of input feautures and known outputs.
 > Inputs
@@ -56,24 +55,24 @@ the training of a machine learning model for the Iris Data set
 **Step 3.** We generate randomly the initial weights for our newral network and for that 2 matrices, with their dimensnions relying on the number of feautures in the hidden layer and the number labels of the output layer. 
 
 > Initial Weights
-> -----------------------------------------------------
-> Matrix(4 rows,10 columns)
-> -0.392277,0.432058,0.326602,-0.473844,0.970544,0.459071,0.850452,0.183974,-1.16253,-1.10889
-> -0.225372,-1.35322,1.43599,0.376165,0.277973,0.59594,-1.21472,-1.23385,0.432877,0.620929
-> -1.53982,1.39396,1.89087,1.6739,-1.02046,0.497299,1.73487,0.6594,-0.787059,-0.15031
-> -1.40425,-1.6524,-1.88987,-0.73973,0.119533,1.84754,0.442807,0.724385,-0.7012,-0.357806
+> ----------------------------------------------------- 
+> Matrix(4 rows,10 columns) 
+> -0.392277,0.432058,0.326602,-0.473844,0.970544,0.459071,0.850452,0.183974,-1.16253,-1.10889 
+> -0.225372,-1.35322,1.43599,0.376165,0.277973,0.59594,-1.21472,-1.23385,0.432877,0.620929 
+> -1.53982,1.39396,1.89087,1.6739,-1.02046,0.497299,1.73487,0.6594,-0.787059,-0.15031 
+> -1.40425,-1.6524,-1.88987,-0.73973,0.119533,1.84754,0.442807,0.724385,-0.7012,-0.357806 
 
-> Matrix(10 rows,3 columns)
-> -0.392277,0.432058,0.326602
-> -0.473844,0.970544,0.459071
-> 0.850452,0.183974,-1.16253
-> -1.10889,-0.225372,-1.35322
-> 1.43599,0.376165,0.277973
-> 0.59594,-1.21472,-1.23385
-> 0.432877,0.620929,-1.53982
-> 1.39396,1.89087,1.6739
-> -1.02046,0.497299,1.73487
-> 0.6594,-0.787059,-0.15031
+> Matrix(10 rows,3 columns) 
+> -0.392277,0.432058,0.326602 
+> -0.473844,0.970544,0.459071 
+> 0.850452,0.183974,-1.16253 
+> -1.10889,-0.225372,-1.35322 
+> 1.43599,0.376165,0.277973 
+> 0.59594,-1.21472,-1.23385 
+> 0.432877,0.620929,-1.53982 
+> 1.39396,1.89087,1.6739 
+> -1.02046,0.497299,1.73487 
+> 0.6594,-0.787059,-0.15031 
 
 **Step 4.** We train the model using feedforward and backpropagation to produce the final weights. 
 As we see in the output below,the accuracy is increasing while the error decreases.
