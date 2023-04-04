@@ -53,34 +53,3 @@ float mseLoss(Matrix P,Matrix Y)
     return mse;   
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////
-// testing part
-//////////////////////////////////////////////////////////////////////////////////////////
-void testMseLoss()
-{
-    int n=10;
-    Matrix P={n,1,allocateHostMemory(n)};
-    Matrix Y={n,1,allocateHostMemory(n)};
-    
-    float fv=2.0f;
-    for (int i=0;i<n;i++) {P.elements[i]=fv;fv+=2.0f;}
-    fv=1.0f;   
-
-    for (int i=0;i<n;i++) {Y.elements[i]=fv;fv+=2.0f;}
-    fv=0.0;
-    
-    for (int i=0;i<n;i++) {float ee=P.elements[i]-Y.elements[i];fv+=ee*ee;}
-    std::cout << "diff sum:" << fv << " " << fv/n <<"\n"; 
-
-    Matrix Pd ={n,1,allocateDeviceMemory(n)};
-    Matrix Yd ={n,1,allocateDeviceMemory(n)};    
-    
-	cudaMemcpy(Pd.elements, P.elements, n*sizeof(float), cudaMemcpyHostToDevice);
-    cudaMemcpy(Yd.elements, Y.elements, n*sizeof(float), cudaMemcpyHostToDevice);
-    
-    
-    auto mse = mseLossCaller(Pd,Yd);
-    std::cout << "Mean Square Error:"<< mse << "\n";
-}
-
-

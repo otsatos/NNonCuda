@@ -91,16 +91,3 @@ __host__ float** generateWeights_(int rows,int cols)
     return W;
 }
 
-////////////////////////////////////////////////////////////////////////////
-//testing
-////////////////////////////////////////////////////////////////////////////
-void testGenerateWeights(int rows,int cols)
-{
-    auto W=generateWeights(rows, cols);
-
-    for (int i = 0; i < rows*cols; i++)
-    {       
-        std::cout << W.elements[i] << ((i + 1) % cols == 0 ? "\n" : ",");    
-    }
-    std::cout << "\n";
-}

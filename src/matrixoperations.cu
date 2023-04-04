@@ -140,8 +140,7 @@ void testmatrixMultiplyElWise()
 
     cudaMemcpy(C.elements,Cd.elements,n*sizeof(float), cudaMemcpyDeviceToHost);
    
-    for (int i=0;i<n;i++) 
-       std::cout << (i+1) <<":" << C.elements[i] << ((i+1)%4!=0?",":"\n"); 
+    C.print(); 
 }
 
 void testMAtrixTranspose()
@@ -163,7 +162,7 @@ void testMAtrixTranspose()
     //matrixTranspose(Ad,Atd);
     matrixTransposeCublas(Ad,Atd);
     cudaMemcpy(At.elements,Atd.elements,n*sizeof(float), cudaMemcpyDeviceToHost);
-    for (int i=0;i<n;i++){std::cout << At.elements[i] << ((i+1)%4!=0?",":"\n");}
+    At.print();
 
     cudaFree(Ad.elements);
     cudaFree(Atd.elements);    
