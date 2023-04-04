@@ -1,5 +1,5 @@
 # Deep Neural Network with CUDA
-Creating DNN building blocks in **C++** using **Cuda** libraries(Coursera GPU Specialization Capstone Project).
+Creating DNN building blocks in C++ using Cuda libraries (Coursera GPU Specialization Capstone Project)
 
 ## Project Description
 Libraries and frameworks like Tensorflow, Pytorch, Deeplearning4j, Keras etc, have revolutionized the data science field with their ready-to-use machine learning tools.
